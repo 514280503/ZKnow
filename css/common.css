@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:zkfront;
+	src: url('../zkfront/zk.ttf');
+}
+html{
+	font-family: zkfront;
+	font-size: 16px;
+	background-color: #f5f5f5;
+}
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure,li{
+	margin:0;
+	padding: 0;
+	
+}
+ul{
+	list-style: none;
+}
+div,figure,img,input,button,aside,textarea{
+	box-sizing: border-box;
+}
+img{
+	display: block;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 70px;
+	background-color: #fff;
+	position:fixed;
+	top:0;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+.center{
+	max-width: 1200px;
+	margin:0 auto;
+}
+.header .logo{
+	background: url(../img/logo.png) no-repeat;
+	width: 20%;
+	height: 70px;
+	float: left;
+}
+.header .nav ul{
+	width: 60%;
+	float: right;
+}
+.nav li{
+	width: 20%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	float: left;
+}
+.nav a{
+	color:#666;
+}
+.nav a:hover{
+	color: #00BFFF;
+}
+.mt70{
+	width: 100%;
+	margin-top:70px;
+	clear: both;
+}
+.page{
+	text-align: center;
+	display: inline-block;
+	clear: both;
+}
+
+.page li{
+	float: left;
+	background: #eee;
+	color: #777;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	margin:0;
+	padding:0;
+}
+.page a{
+	color: #777;
+	display: block;
+}
+.page .active,.page a:hover{
+	color: #fff;
+	background: #00BFFF;
+}
+.page .first{
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.page .next{
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.footer{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	color: #777;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	clear: both;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.sm-hidden,.logo {
+		display: none;
+	}
+	
+	.header .nav ul {
+		width: 100%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.sm-hidden,.logo{
+		display: none;
+	}
+	
+	.header .nav ul {
+		width: 100%;
+	}
+}
+
+@media (max-width:479px){
+	.header,.nav li,.footer{
+		height: 45px;
+		line-height: 45px;
+	}
+	.mt70{
+		margin-top: 45px;
+	}
+	.header .nav ul{
+		width: 100%;
+	}
+	.sm-hidden,.logo{
+		display: none;
+	}
+	.nav{
+		width: 100%;
+	}
+	.footer{
+		font-size: 13px;
+	}
+}

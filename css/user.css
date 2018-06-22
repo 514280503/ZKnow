@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.userlist{
+	background: #fff;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	max-width: 1200px;
+	margin:90px auto 20px;
+	min-height: 400px;
+	overflow: hidden;
+	text-align: center;
+}
+.userlist figure{
+	width: 20%;
+	text-align: center;
+	display: inline-block;
+	margin:20px;
+}
+.userlist figcaption{
+	margin-top:10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.userlist {
+		margin-top: 65px;
+		min-height: 320px;
+	}
+	
+	.userlist figure{
+		width: 25%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	.userlist {
+		margin-top: 90px;
+		min-height: 320px;
+		font-size: 14px;
+	}
+	.userlist figure{
+		width: 25%;
+	}
+	
+}
+
+@media (max-width:479px){
+	.userlist{
+		margin-top:65px;
+		min-height: 320px;
+		font-size: 12px;		
+	}
+	
+	.userlist figure{
+		width: 40%;
+		margin:15px 1%;
+	}
+	
+}

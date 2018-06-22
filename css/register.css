@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.register{
+	background: #fff;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	max-width: 1200px;
+	margin:90px auto 20px;
+	min-height: 400px;
+}
+.register form{
+	width: 55%;
+	margin:0 auto;
+	padding-top:50px;
+}
+.register input{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 35px;
+	line-height: 35px;
+	margin:10px 0;
+	border-radius: 5px;
+	background: #fff;
+	padding: 0 10px;
+	font-size: 15px;
+}
+.state {
+    float: left;
+    margin: 5px !important;
+    padding: 0 !important;
+    width: 5% !important;
+    height: 15px !important;
+    line-height: 15px !important;
+}
+.submit{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	background: #00BFFF;
+	font-size: 15px;
+	color: #fff;
+	border: 1px solid #00BFFF;
+	border-radius: 5px;
+	margin-top:10px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.register {
+		margin-top: 65px;
+		min-height: 320px;
+	}
+	
+	.register form {
+		width: 95%;
+		padding-top: 20px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	.register {
+		margin-top: 90px;
+		min-height: 320px;
+	}
+	
+	.register form {
+		width: 85%;
+		padding-top: 20px;
+	}
+}
+
+@media (max-width:479px){
+	.register{
+		margin-top:65px;
+		min-height: 320px;		
+	}
+	.register form{
+		width: 95%;
+		padding-top:20px;
+	}
+}
